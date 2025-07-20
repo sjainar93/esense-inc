@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -54,8 +54,16 @@
 </script>
 <!-- header end -->
     <!-- Navbar End -->
-
-
+    <!-- slider -->
+<div id="header"></div>
+<script>
+  fetch("slider.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("hero-slider").innerHTML = data;
+    });
+</script>
+<!-- slider end -->
     <!-- Hero Start -->
     <div class="container-fluid pt-5 bg-primary hero-header mb-5" style="background: url('img/ai bg.png') no-repeat center center;
     background-size: cover;">
@@ -105,7 +113,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                     <div class="about-img">
-                        <img class="img-fluid" src="img/about-img.jpg">
+                        <img class="img-fluid" src="img/ai feature.png">
                     </div>
                 </div>
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
@@ -248,7 +256,7 @@
                         </div>
                         <span>Diam dolor diam ipsum et tempor sit</span>
                     </div>
-                    <div class="row g-4 pt-3">
+             <!--        <div class="row g-4 pt-3">
                         <div class="col-sm-6">
                             <div class="d-flex rounded p-3" style="background: rgba(256, 256, 256, 0.1);">
                                 <i class="fa fa-users fa-3x text-white"></i>
@@ -267,10 +275,10 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-lg-6 align-self-end text-center text-md-end wow fadeIn" data-wow-delay="0.5s">
-                    <img class="img-fluid" src="img/feature.png" alt="">
+                    <!-- <img class="img-fluid" src="img/feature.png" alt=""> -->
                 </div>
             </div>
         </div>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Salesforce Consulting | eSense</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Salesforce Consulting Services, CRM, cloud transformation, certified Salesforce consultants" name="keywords">
+    <meta content="Expert Salesforce Consulting by eSense. We help businesses innovate with cloud CRM and scalable Salesforce solutions for growth." name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Header Start -->
+    <div id="header"></div>
+    <script>
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            });
+    </script>
+    <!-- Header End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid pt-5 bg-primary hero-header">
+        <div class="container pt-5">
+            <div class="row g-5 pt-5">
+                <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-5">
+                    <h1 class="text-white mb-4">Salesforce Consulting Services</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="#">Solutions</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Salesforce Consulting</li>
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col-lg-6 align-self-end text-center text-lg-end">
+                    <!-- <img class="img-fluid" src="#" alt="Salesforce Hero" style="max-height: 300px;"> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Content Start -->
+    <div class="container-fluid py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2s">
+                    <img class="img-fluid rounded" src="img/Salesforce Consulting.png" alt="Salesforce Consulting">
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.4s">
+                    <h2 class="mb-4">Empowering Organizations Through Cloud Innovation</h2>
+                    <p class="text-muted mb-4">
+                        From Fortune 500 giants to agile startups and nonprofits, we guide organizations in embracing the power of the Salesforce platform. At <strong>eSense</strong>, we bring over a decade of experience helping businesses solve complex challenges and unlock real business value.
+                    </p>
+                    <p class="text-muted mb-4">
+                        Our Salesforce consulting redefines engagement by converting your existing processes into intelligent solutions that improve efficiency and deliver maximum ROI. Whether it's streamlining workflows, enhancing CRM engagement, or automating business functions—we empower growth through cloud-based intelligence.
+                    </p>
+                    <p class="text-dark fw-bold">What We Offer:</p>
+                    <ul class="text-muted mb-4">
+                        <li>End-to-end Salesforce CRM implementation</li>
+                        <li>Custom app development and integration</li>
+                        <li>Sales, Service & Marketing Cloud optimization</li>
+                        <li>Data migration, training & change management</li>
+                        <li>ROI-focused consulting and automation</li>
+                    </ul>
+                    <p class="text-dark">We’ve partnered with Salesforce.com for years, delivering solutions through certified consultants with real project experience. Whether you're just starting or need advanced optimization—we’re here to help.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Content End -->
+
+    <!-- Contact Prompt Start -->
+    <div class="container-fluid bg-light py-5">
+        <div class="container text-center wow fadeInUp" data-wow-delay="0.2s">
+            <h3 class="mb-4">Ready to Transform Your Business?</h3>
+            <p class="mb-4">Contact us today via <a href="mailto:info@esense.com" class="text-primary">email</a> or <a href="tel:+1234567890" class="text-primary">phone</a> to speak with our Salesforce consultants about custom strategies tailored for your needs.</p>
+            <a href="contact.html" class="btn btn-primary px-4 py-2">Consult With Us</a>
+        </div>
+    </div>
+    <!-- Contact Prompt End -->
+
+    <!-- Footer Start -->
+    <div id="footer"></div>
+    <script>
+        fetch("footer.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
