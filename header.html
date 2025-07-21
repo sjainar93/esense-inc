@@ -1,34 +1,33 @@
-  <style>
-/* Style for nested submenu */
-
+<style>
+/* Ensure all dropdowns are hidden initially */
 .dropdown-menu{
     display: none;
 }
-
-.dropdown-submenu : hover{
+.dropdown-menu {
     display: none;
+    margin-top: 0;
 }
+
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+
 .dropdown-submenu {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-submenu > .dropdown-menu {
-
-  position: absolute;
-  top: 0;
-  right: 100%;
-  margin-left: 0;
-  margin-top: -1px;
-  z-index: 999;
-  min-width: 200px;
-  border-radius: 0.25rem;
+    display: none;
+    top: 0;
+    right: 100%;
+    position: absolute;
+    margin-top: -1px;
 }
-
 
 .dropdown-submenu:hover > .dropdown-menu {
-  display: block;
+    display: block;
 }
-  </style>
+</style>
   <header>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 <script src="lib/owlcarousel/owl.carousel.min.js"></script>
@@ -77,15 +76,14 @@
                                 <!-- <a href="testimonial.html" class="dropdown-item">SAP Consulting</a> -->
 
 
-                         <div class="dropdown-submenu dropdown-item">
-                      <a href="#" class="dropdown-toggle">SAP Consulting</a>
-                      <ul class="dropdown-menu bg-light">
-                        <li><a href="SAP_S4HANA_ECC.html" class="dropdown-item">SAP S4 HANA/ECC Services</a></li>
-                        <li><a href="SAP_ProcurementCloudPlatform.html" class="dropdown-item">SAP’s Procurement Cloud Platform</a></li>
-                        <li><a href="SAP Managed Services.html" class="dropdown-item">SAP Managed Services (AMS)</a></li>
-                      </ul>
-                    </div>
-
+                 <div class="dropdown-submenu">
+    <a href="#" class="dropdown-item dropdown-toggle">SAP Consulting</a>
+    <div class="dropdown-menu bg-light">
+        <a href="SAP_S4HANA_ECC.html" class="dropdown-item">SAP S4 HANA/ECC Services</a>
+        <a href="SAP_ProcurementCloudPlatform.html" class="dropdown-item">SAP’s Procurement Cloud Platform</a>
+        <a href="SAP Managed Services.html" class="dropdown-item">SAP Managed Services (AMS)</a>
+    </div>
+</div>
 
 
 
